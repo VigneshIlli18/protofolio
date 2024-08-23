@@ -15,6 +15,12 @@ window.addEventListener('scroll',function(){
   lastScrollTop = scrollTop; //New Position Stored
 });
 
+function openURL() {
+  window.open("pdf/Vignesh_Resume.pdf", "_blank");
+}
+
+document.getElementById("resume-btn").addEventListener("click", openURL);
+
 
 //FOr setting toggle menu
 var audio = document.getElementById("audioPlayer"),
@@ -104,7 +110,7 @@ window.addEventListener("scroll", () => {
     });
 }),
   console.log(
-    "%c Designed and Developed by VI {Vaibhav Padmani}",
+    "%c Designed and Developed by VI {Vignesh Illi}",
     "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;"
   );
 
